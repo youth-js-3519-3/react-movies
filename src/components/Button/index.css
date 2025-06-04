@@ -1,0 +1,30 @@
+.btn {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.secondary {
+    border: 1px solid currentColor;
+    color: var(--secondary-color);
+}
+
+.sm {
+    padding: 3px 10px;
+}
+
+.lg {
+    padding: 8px 20px;
+}
