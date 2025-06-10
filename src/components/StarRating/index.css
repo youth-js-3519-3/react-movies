@@ -1,0 +1,19 @@
+.star-rating {
+    position: relative;
+    color: orange;
+    width: fit-content;
+}
+
+.star-rating .filled,
+.star-rating .not-filled {
+    width: 120px;
+    display: flex;
+}
+
+.star-rating .wrapper {
+    width: var(--wrapper-width);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

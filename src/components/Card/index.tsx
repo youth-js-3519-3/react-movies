@@ -1,3 +1,4 @@
+import { useMemo, type CSSProperties } from 'react';
 import './index.css'
 
 export type CardProps = {
@@ -19,8 +20,19 @@ const Card = ({
         imageSrc
     } = movie;
 
+    const randomNumber = useMemo(() => {
+        return Math.random()
+    }, [])
+
     return (
-        <div className='movie-card'>
+        <div 
+            className='movie-card'
+            style={{
+                '--rotation': showInfo
+                    ? randomNumber
+                    : '0deg',
+            } as CSSProperties}    
+        >
             <img src={imageSrc} alt="" />
             {showInfo && (
                 <>

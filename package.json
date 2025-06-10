@@ -12,6 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.34.0",
     "bootstrap": "^5.3.6",
     "classnames": "^2.5.1",
     "react": "^19.1.0",
