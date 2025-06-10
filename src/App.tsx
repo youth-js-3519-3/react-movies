@@ -1,7 +1,14 @@
+import Input from "./components/Input"
+
 function App() {
   return (
     <>
-      Olá mundo!
+      <Input
+        label="Email"
+      />
+      <Input
+        label="Password"
+      />
     </>
   )
 }

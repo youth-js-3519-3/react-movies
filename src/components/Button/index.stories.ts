@@ -8,9 +8,7 @@ const meta = {
     args: {
         children: 'enviar'
     },
-    parameters: {
-        layout: 'centered',
-    },
+    parameters: { layout: 'centered' },
 } satisfies Meta<typeof Button>;
 
 export default meta;

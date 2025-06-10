@@ -1,0 +1,9 @@
+.movie-card {
+    max-width: 100px;
+    display: flex;
+    flex-flow: column;
+}
+
+.movie-card img {
+    max-width: 100%;
+}

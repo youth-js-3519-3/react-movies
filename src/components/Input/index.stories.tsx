@@ -14,6 +14,27 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Single: Story = {
   args: {},
 };
+
+export const Form: Story = {
+  render: (args) => (
+    <div
+      style={{
+        display: 'flex',
+        flexFlow: 'column',
+        gap: '10px'
+      }}
+    >
+      <Input
+        label="Email"
+        {...args}
+      />
+      <Input
+        {...args}
+        label="Password"
+      />
+    </div>
+  )
+}

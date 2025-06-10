@@ -1,3 +1,4 @@
+import './index.css'
 
 type InputProps = {
     placeholder?: string;
@@ -18,7 +19,7 @@ const Input = ({
 }: InputProps) => {
   return (
     <label>
-        {label}
+        <span>{label}</span>
         <input
             placeholder={placeholder}
             disabled={disabled}
