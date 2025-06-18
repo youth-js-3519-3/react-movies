@@ -19,8 +19,6 @@ const ProductCard = ({
         image,
     }
 }: ProductCardProps) => {
-
-
     return (
         <div className="product-card">
             <img src={image} alt={title} />
