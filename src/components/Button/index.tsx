@@ -3,13 +3,13 @@ import './index.css'
 import classNames from "classnames";
 
 type ButtonProps = {
-    primary?: boolean;
+    variant?: 'primary' | 'secondary' | 'link';
     size?: 'sm' | 'md' | 'lg';
     disabled?: boolean;
 }
 
 const Button = ({
-    primary = true,
+    variant = 'primary',
     size = 'md',
     disabled,
     children
@@ -17,9 +17,8 @@ const Button = ({
     const classes = classNames(
         'btn',
         size,
+        variant,
         {
-            primary: primary === true,
-            secondary: primary !== true,
             disabled
         }
     )

@@ -1,7 +1,22 @@
-label span {
+.yf-input {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.yf-input span {
     margin-right: 15px;
 }
 
-label input::placeholder {
-    font-weight: bold;
+.yf-input input {
+    border: 1px solid #CCE7FF;
+    border-radius: 5px;
+    height: 48px;
+    color: #CCE7FF;
+    background: none;
+    padding-left: 20px;
+}
+
+.yf-input input::placeholder {
+    color: #73808C;
 }

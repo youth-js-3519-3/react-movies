@@ -18,7 +18,7 @@ const Input = ({
     label
 }: InputProps) => {
   return (
-    <label>
+    <label className='yf-input'>
         <span>{label}</span>
         <input
             placeholder={placeholder}
