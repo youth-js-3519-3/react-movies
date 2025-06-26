@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-decoration: none;
 }
 
 .btn.disabled {
@@ -22,8 +23,7 @@
 }
 
 .secondary {
-    border: 1px solid currentColor;
-    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     color: #fff;
 }
 
@@ -33,4 +33,10 @@
 
 .lg {
     padding: 8px 20px;
+}
+
+.btn.link {
+    padding: 0;
+    color: #fff;
+    text-decoration: underline;
 }

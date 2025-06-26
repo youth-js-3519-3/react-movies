@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
 
@@ -16,13 +17,18 @@ const Login = () => {
       />
 
       <div className="actions">
-        <a href="/forgot-password">
+        <Button
+          variant="link" 
+          role="link" 
+        >
           Esqueci minha senha
-        </a>
-
-        <Button>
-          Enviar
         </Button>
+
+        <Link to={'/'}>
+          <Button>
+            Enviar
+          </Button>
+        </Link>
       </div>
 
       <Button
