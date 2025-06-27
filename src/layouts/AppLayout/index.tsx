@@ -1,5 +1,5 @@
 import { matchRoutes, Outlet, useLocation } from 'react-router'
-import './index.css'
+import './index.scss'
 import { routes, type Route } from '../../main';
 
 const HeaderAction = () => {
@@ -12,7 +12,7 @@ const HeaderAction = () => {
       {location.pathname == '/' && <img src={'/images/logo-white.png'} />}
       {location.pathname !== '/' && (
         <div className='go-back'>
-          {'<'}
+          <img src="/images/back-icon.svg" alt="Previous page" />
           <span>
             {title}
           </span>

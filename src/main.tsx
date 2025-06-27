@@ -21,6 +21,9 @@ export type Route = {
 
 export const routes = [
   {
+
+  },
+  {
     path: "auth",
     element: <AuthLayout />,
     children: [
@@ -33,6 +36,7 @@ export const routes = [
     children: [
       { 
         index: true, 
+        path: 'home',
         element: <Home /> 
       },
       { 

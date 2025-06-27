@@ -1,0 +1,22 @@
+.login-form {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    width: 350px;
+    max-width: 80vw;
+
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn {
+        
+    }
+
+    .register-link .btn {
+        width: 100%;
+    }
+}
+

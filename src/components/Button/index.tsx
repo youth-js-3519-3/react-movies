@@ -1,5 +1,5 @@
 import type { HTMLAttributes, PropsWithChildren } from "react";
-import './index.css'
+import './index.scss'
 import classNames from "classnames";
 
 type ButtonProps = {

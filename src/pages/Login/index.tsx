@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
 
-import './index.css'
+import './index.scss'
 
 const Login = () => {
   return (
@@ -17,25 +17,31 @@ const Login = () => {
       />
 
       <div className="actions">
-        <Button
-          variant="link" 
-          role="link" 
-        >
-          Esqueci minha senha
-        </Button>
+        <Link to="/auth/forgot-password">
+          <Button
+            variant="link" 
+            role="link" 
+          >
+            Esqueci minha senha
+          </Button>
+        </Link>
 
-        <Link to={'/'}>
-          <Button>
+        <Link to={'/'} className="text-decoration-none">
+          <Button
+            role={'link'}
+          >
             Enviar
           </Button>
         </Link>
       </div>
 
-      <Button
-        variant={"secondary"}
-      >
-        Registre-se
-      </Button>
+      <Link to={'/auth/register'} className="register-link text-decoration-none">
+        <Button
+          variant={"secondary"}
+        >
+          Registre-se
+        </Button>
+      </Link>
     </div>
   );
 };

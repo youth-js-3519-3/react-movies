@@ -1,0 +1,12 @@
+.banner-home {
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+        width: 300px;
+        max-width: 90vw;
+    }
+}
