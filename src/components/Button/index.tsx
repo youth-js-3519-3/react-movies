@@ -1,4 +1,4 @@
-import type { HTMLAttributes, PropsWithChildren } from "react";
+import type { ButtonHTMLAttributes, PropsWithChildren } from "react";
 import './index.scss'
 import classNames from "classnames";
 
@@ -7,7 +7,7 @@ type ButtonProps = {
     size?: 'sm' | 'md' | 'lg';
     width?: 'sm' | 'lg';
     disabled?: boolean;
-} & HTMLAttributes<HTMLButtonElement>
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
 const Button = ({
     variant = 'primary',
